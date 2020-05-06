@@ -12,14 +12,21 @@ struct MenuListView: View {
     var body: some View {
         NavigationView{
             VStack {
+                ContentHeaderView()
                 NavigationLink(destination: NewGameView()){
-                    Text("New Game")
+                    Text("Create New Game")
+                        .padding()
+                        .font(.headline)
                 }
                 NavigationLink(destination: RulesView()){
                     Text("Rules")
+                        .padding()
+                        .font(.headline)
                 }
+                Spacer()
             }
-        }
+    
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

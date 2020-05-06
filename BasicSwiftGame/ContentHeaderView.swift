@@ -11,8 +11,12 @@ import SwiftUI
 struct ContentHeaderView: View {
     var body: some View {
         VStack{
-            ZStack{
+            VStack{
+                Text("Farkle Dice Game")
+                    .font(.largeTitle)
+                    .fontWeight(.black)
                 Text("Opench Industries")
+                    .font(.subheadline)
             }
             .frame(minWidth:300, idealWidth: 500, maxWidth: 600, minHeight: 75, idealHeight: 143, maxHeight: 150, alignment: .center)
         }
