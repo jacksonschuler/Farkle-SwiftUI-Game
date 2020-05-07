@@ -20,4 +20,5 @@ class Game: ObservableObject {
             Die.init(id: 3, result: 1),
             Die.init(id: 4, result: 1),
             Die.init(id: 5, result: 1)]
+    @Published var currTurn = 0
 }
