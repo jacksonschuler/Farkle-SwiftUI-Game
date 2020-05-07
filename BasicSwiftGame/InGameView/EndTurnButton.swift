@@ -77,9 +77,8 @@ struct EndTurnButton: View {
     var body: some View {
         Button(action:{
            for die in self.currGame.DiceList {
-                die.result = 1
+                die.result = 0
                 die.isActive = true
-                self.currGame.flag = 1
             }
             
             // set player turn here
@@ -88,17 +87,25 @@ struct EndTurnButton: View {
             
             //make call to update score in scoreboard
             
+            // reset turn count
+            self.currGame.turnRollCountFlag = true
+            self.currGame.turnRollCount = 0
+            self.currGame.flag = 1
        }){
-        VStack {
-            Text("End Turn")
-        }
-            
+           Text("End Turn")
+                .fontWeight(.bold)
+                .font(.title)
+                .padding()
+                .background(Color.red)
+                .foregroundColor(.white)
+                .padding(10)
+                .border(Color.red, width: 5)
        }
     }
 }
 
 struct EndTurnButton_Previews: PreviewProvider {
     static var previews: some View {
-        EndTurnButton()
+        EndTurnButton().environmentObject(Game())
     }
 }
