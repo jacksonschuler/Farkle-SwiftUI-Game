@@ -24,9 +24,12 @@ struct MenuListView: View {
                         .font(.headline)
                 }
                 Spacer()
+
             }
+            .navigationBarTitle("", displayMode: .inline)
+            }.navigationViewStyle(StackNavigationViewStyle())
     
-        }.navigationViewStyle(StackNavigationViewStyle())
+    
     }
 }
 

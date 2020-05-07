@@ -14,8 +14,7 @@ struct RulesHeaderView: View {
             Text("Rules")
                 .font(.title)
                 .fontWeight(.heavy)
-                .padding(.leading)
-                .padding(.bottom,10)
+                .padding(.all, 20)
             Spacer()
         }
     }

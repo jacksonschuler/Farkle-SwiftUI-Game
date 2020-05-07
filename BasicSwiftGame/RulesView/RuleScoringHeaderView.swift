@@ -14,9 +14,7 @@ struct RuleScoringHeaderView: View {
             Text("Scoring")
                 .font(.title)
                 .fontWeight(.heavy)
-                .padding(.top, 10)
-                .padding(.leading)
-                .padding(.bottom,10)
+                .padding(.all, 20)
             Spacer()
         }
     }

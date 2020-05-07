@@ -17,9 +17,6 @@ struct RulesView: View {
             RuleScoringListView()
             Spacer()
         }
-        
-      
-
     }
 }
 
