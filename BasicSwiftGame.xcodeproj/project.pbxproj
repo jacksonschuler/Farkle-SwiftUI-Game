@@ -82,11 +82,11 @@
 		A854B66724649C78000DC53C /* InGameView */ = {
 			isa = PBXGroup;
 			children = (
+				A819B5782460E0B70058D76E /* InGameView.swift */,
 				A898B3162461D86600E67442 /* InGameSingleDiceView.swift */,
 				A898B3142461D3DA00E67442 /* InGameDiceView.swift */,
 				A854B66D2464AB06000DC53C /* EndTurnButton.swift */,
 				A854B66B2464AAB8000DC53C /* RollDiceButton.swift */,
-				A819B5782460E0B70058D76E /* InGameView.swift */,
 			);
 			path = InGameView;
 			sourceTree = "<group>";
