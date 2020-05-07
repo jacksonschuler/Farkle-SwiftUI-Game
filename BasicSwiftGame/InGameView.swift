@@ -7,7 +7,9 @@
 //
 
 import SwiftUI
-
+/*
+ InGame View houses the InGameDiceView, InGameSingleDiceView, Scoreboard views
+ */
 struct InGameView: View {
     var body: some View {
         InGameDiceView()

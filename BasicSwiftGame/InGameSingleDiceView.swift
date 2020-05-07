@@ -1,6 +1,17 @@
+//
+//  InGameSingleDiceView.swift
+//  BasicSwiftGame
+//
+//  Created by Ben Baker on 2020-05-04.
+//  Copyright © 2020 Opench. All rights reserved.
+//
 
 import SwiftUI;
 
+/*
+In Game Single Dice View - displays a single die button / image which
+ will set the die to inactive
+ */
 struct InGameSingleDiceView: View {
     @EnvironmentObject var currGame: Game
     var index: Int
