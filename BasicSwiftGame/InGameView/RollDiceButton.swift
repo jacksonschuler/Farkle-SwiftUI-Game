@@ -22,6 +22,13 @@ struct RollDiceButton: View {
             self.currGame.flag = Int.random(in: 1...6)
         }) {
             Text("Roll Dice")
+                .fontWeight(.bold)
+                .font(.title)
+                .padding()
+                .background(Color.red)
+                .foregroundColor(.white)
+                .padding(10)
+                .border(Color.red, width: 5)
         }
     }
 }

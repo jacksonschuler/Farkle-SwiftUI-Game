@@ -27,6 +27,13 @@ struct EndTurnButton: View {
             
        }){
            Text("End Turn")
+                .fontWeight(.bold)
+                .font(.title)
+                .padding()
+                .background(Color.red)
+                .foregroundColor(.white)
+                .padding(10)
+                .border(Color.red, width: 5)
        }
     }
 }
