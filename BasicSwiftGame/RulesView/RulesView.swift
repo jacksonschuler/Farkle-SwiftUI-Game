@@ -2,7 +2,13 @@ import SwiftUI
 
 struct RulesView: View {
     var body: some View {
-        Text("Rules")
+        VStack {
+            RulesHeaderView()
+            RulesListView()
+            RuleScoringHeaderView()
+            RuleScoringListView()
+            Spacer()
+        }
     }
 }
 
