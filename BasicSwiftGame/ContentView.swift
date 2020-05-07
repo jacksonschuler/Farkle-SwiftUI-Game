@@ -20,8 +20,8 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group{
-            ContentView()
-            ContentView()
+            ContentView().environmentObject(Game())
+            ContentView().environmentObject(Game())
                 .colorScheme(.dark)
                 .background(Color.black)
                 .previewDevice("iPad Pro (9.7-inch)")

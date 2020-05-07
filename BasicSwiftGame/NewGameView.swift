@@ -9,16 +9,21 @@ import SwiftUI
 
 struct NewGameView: View {
     var body: some View {
-        VStack{
-            Text("New Game")
-            Text("Get Game info here")
-            Text("Link to Game View")
+        NavigationView{
+            VStack{
+                Text("New Game")
+                Text("Get Game info here")
+                Text("Link to Game View")
+                NavigationLink(destination: InGameView()){
+                                   Text("New Game")
+               }
+            }
         }
     }
 }
 
 struct NewGameView_Previews: PreviewProvider {
     static var previews: some View {
-        NewGameView()
+        NewGameView().environmentObject(Game())
     }
 }

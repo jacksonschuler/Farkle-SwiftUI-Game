@@ -12,6 +12,10 @@
 		A819B5752460CA8D0058D76E /* NewGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A819B5742460CA8D0058D76E /* NewGameView.swift */; };
 		A819B5772460CC160058D76E /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A819B5762460CC160058D76E /* RulesView.swift */; };
 		A819B5792460E0B70058D76E /* InGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A819B5782460E0B70058D76E /* InGameView.swift */; };
+		A854B66224647029000DC53C /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = A854B66124647029000DC53C /* Die.swift */; };
+		A854B66424647055000DC53C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A854B66324647055000DC53C /* Game.swift */; };
+		A898B3152461D3DA00E67442 /* InGameDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A898B3142461D3DA00E67442 /* InGameDiceView.swift */; };
+		A898B3172461D86600E67442 /* InGameSingleDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A898B3162461D86600E67442 /* InGameSingleDiceView.swift */; };
 		BF60C4D724607DBC0045D2FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60C4D624607DBC0045D2FF /* AppDelegate.swift */; };
 		BF60C4D924607DBC0045D2FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60C4D824607DBC0045D2FF /* SceneDelegate.swift */; };
 		BF60C4DB24607DBC0045D2FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60C4DA24607DBC0045D2FF /* ContentView.swift */; };
@@ -26,6 +30,10 @@
 		A819B5742460CA8D0058D76E /* NewGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameView.swift; sourceTree = "<group>"; };
 		A819B5762460CC160058D76E /* RulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
 		A819B5782460E0B70058D76E /* InGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InGameView.swift; sourceTree = "<group>"; };
+		A854B66124647029000DC53C /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
+		A854B66324647055000DC53C /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		A898B3142461D3DA00E67442 /* InGameDiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InGameDiceView.swift; sourceTree = "<group>"; };
+		A898B3162461D86600E67442 /* InGameSingleDiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InGameSingleDiceView.swift; sourceTree = "<group>"; };
 		BF60C4D324607DBC0045D2FF /* BasicSwiftGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicSwiftGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF60C4D624607DBC0045D2FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF60C4D824607DBC0045D2FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +78,10 @@
 				A819B5742460CA8D0058D76E /* NewGameView.swift */,
 				A819B5782460E0B70058D76E /* InGameView.swift */,
 				A819B5722460C3300058D76E /* MenuListView.swift */,
+				A898B3142461D3DA00E67442 /* InGameDiceView.swift */,
+				A854B66324647055000DC53C /* Game.swift */,
+				A854B66124647029000DC53C /* Die.swift */,
+				A898B3162461D86600E67442 /* InGameSingleDiceView.swift */,
 				A819B5762460CC160058D76E /* RulesView.swift */,
 				A819B5702460C2A50058D76E /* ContentHeaderView.swift */,
 				BF60C4DC24607DBD0045D2FF /* Assets.xcassets */,
@@ -163,10 +175,14 @@
 			files = (
 				A819B5772460CC160058D76E /* RulesView.swift in Sources */,
 				BF60C4D724607DBC0045D2FF /* AppDelegate.swift in Sources */,
+				A854B66224647029000DC53C /* Die.swift in Sources */,
 				A819B5732460C3300058D76E /* MenuListView.swift in Sources */,
 				A819B5712460C2A50058D76E /* ContentHeaderView.swift in Sources */,
 				BF60C4D924607DBC0045D2FF /* SceneDelegate.swift in Sources */,
 				BF60C4DB24607DBC0045D2FF /* ContentView.swift in Sources */,
+				A854B66424647055000DC53C /* Game.swift in Sources */,
+				A898B3172461D86600E67442 /* InGameSingleDiceView.swift in Sources */,
+				A898B3152461D3DA00E67442 /* InGameDiceView.swift in Sources */,
 				A819B5752460CA8D0058D76E /* NewGameView.swift in Sources */,
 				A819B5792460E0B70058D76E /* InGameView.swift in Sources */,
 			);

@@ -10,12 +10,12 @@ import SwiftUI
 
 struct InGameView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        InGameDiceView()
     }
 }
 
 struct InGameView_Previews: PreviewProvider {
     static var previews: some View {
-        InGameView()
+        InGameView().environmentObject(Game())
     }
 }
