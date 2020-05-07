@@ -13,6 +13,7 @@ import SwiftUI
 struct InGameView: View {
     var body: some View {
         InGameDiceView()
+        .navigationBarBackButtonHidden(true)
     }
 }
 

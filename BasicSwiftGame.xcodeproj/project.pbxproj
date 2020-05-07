@@ -14,6 +14,8 @@
 		A854B66224647029000DC53C /* Die.swift in Sources */ = {isa = PBXBuildFile; fileRef = A854B66124647029000DC53C /* Die.swift */; };
 		A854B66424647055000DC53C /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A854B66324647055000DC53C /* Game.swift */; };
 		A854B66624649BD7000DC53C /* RulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A854B66524649BD7000DC53C /* RulesView.swift */; };
+		A854B66C2464AAB8000DC53C /* RollDiceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A854B66B2464AAB8000DC53C /* RollDiceButton.swift */; };
+		A854B66E2464AB06000DC53C /* EndTurnButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A854B66D2464AB06000DC53C /* EndTurnButton.swift */; };
 		A898B3152461D3DA00E67442 /* InGameDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A898B3142461D3DA00E67442 /* InGameDiceView.swift */; };
 		A898B3172461D86600E67442 /* InGameSingleDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A898B3162461D86600E67442 /* InGameSingleDiceView.swift */; };
 		BF34974324620349007F8C0A /* RulesHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34974224620349007F8C0A /* RulesHeaderView.swift */; };
@@ -42,6 +44,8 @@
 		A854B66124647029000DC53C /* Die.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Die.swift; sourceTree = "<group>"; };
 		A854B66324647055000DC53C /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		A854B66524649BD7000DC53C /* RulesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesView.swift; sourceTree = "<group>"; };
+		A854B66B2464AAB8000DC53C /* RollDiceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollDiceButton.swift; sourceTree = "<group>"; };
+		A854B66D2464AB06000DC53C /* EndTurnButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndTurnButton.swift; sourceTree = "<group>"; };
 		A898B3142461D3DA00E67442 /* InGameDiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InGameDiceView.swift; sourceTree = "<group>"; };
 		A898B3162461D86600E67442 /* InGameSingleDiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InGameSingleDiceView.swift; sourceTree = "<group>"; };
 		BF34974224620349007F8C0A /* RulesHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesHeaderView.swift; sourceTree = "<group>"; };
@@ -78,9 +82,11 @@
 		A854B66724649C78000DC53C /* InGameView */ = {
 			isa = PBXGroup;
 			children = (
+				A819B5782460E0B70058D76E /* InGameView.swift */,
 				A898B3162461D86600E67442 /* InGameSingleDiceView.swift */,
 				A898B3142461D3DA00E67442 /* InGameDiceView.swift */,
-				A819B5782460E0B70058D76E /* InGameView.swift */,
+				A854B66D2464AB06000DC53C /* EndTurnButton.swift */,
+				A854B66B2464AAB8000DC53C /* RollDiceButton.swift */,
 			);
 			path = InGameView;
 			sourceTree = "<group>";
@@ -245,6 +251,7 @@
 				BF3497452462146E007F8C0A /* RulesListView.swift in Sources */,
 				BF60C4D924607DBC0045D2FF /* SceneDelegate.swift in Sources */,
 				F67E69C02462785A00E68E1E /* AddPlayerView.swift in Sources */,
+				A854B66E2464AB06000DC53C /* EndTurnButton.swift in Sources */,
 				BF60C4DB24607DBC0045D2FF /* ContentView.swift in Sources */,
 				A854B66424647055000DC53C /* Game.swift in Sources */,
 				A898B3172461D86600E67442 /* InGameSingleDiceView.swift in Sources */,
@@ -256,6 +263,7 @@
 				A819B5752460CA8D0058D76E /* NewGameView.swift in Sources */,
 				F67E69BB2462732000E68E1E /* Player.swift in Sources */,
 				A819B5792460E0B70058D76E /* InGameView.swift in Sources */,
+				A854B66C2464AAB8000DC53C /* RollDiceButton.swift in Sources */,
 				BF34974924621FA5007F8C0A /* RuleScoringHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
