@@ -18,7 +18,6 @@
 		BF34974924621FA5007F8C0A /* RuleScoringHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34974824621FA5007F8C0A /* RuleScoringHeaderView.swift */; };
 		BF34974B2462213B007F8C0A /* RuleScoringItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34974A2462213B007F8C0A /* RuleScoringItemView.swift */; };
 		BF34974D24622147007F8C0A /* RuleScoringListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34974C24622147007F8C0A /* RuleScoringListView.swift */; };
-		BF34974F246470E2007F8C0A /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34974E246470E1007F8C0A /* Player.swift */; };
 		BF60C4D724607DBC0045D2FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60C4D624607DBC0045D2FF /* AppDelegate.swift */; };
 		BF60C4D924607DBC0045D2FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60C4D824607DBC0045D2FF /* SceneDelegate.swift */; };
 		BF60C4DB24607DBC0045D2FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60C4DA24607DBC0045D2FF /* ContentView.swift */; };
@@ -227,7 +226,6 @@
 				A819B5752460CA8D0058D76E /* NewGameView.swift in Sources */,
 				F67E69BB2462732000E68E1E /* Player.swift in Sources */,
 				A819B5792460E0B70058D76E /* InGameView.swift in Sources */,
-				BF34974F246470E2007F8C0A /* Player.swift in Sources */,
 				BF34974924621FA5007F8C0A /* RuleScoringHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
