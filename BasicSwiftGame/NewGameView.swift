@@ -17,7 +17,9 @@ struct NewGameView: View {
                 NavigationLink(destination: InGameView()){
                                    Text("New Game")
                }
+            
             }
+            
         }
     }
 }
