@@ -1,11 +1,3 @@
-//
-//  RulesView.swift
-//  BasicSwiftGame
-//
-//  Created by Ben Baker on 2020-05-04.
-//  Copyright © 2020 Opench. All rights reserved.
-//
-
 import SwiftUI
 
 struct RulesView: View {

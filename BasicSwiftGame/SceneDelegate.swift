@@ -20,8 +20,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
-
+        
+        // Define Environment Object Game()
+        let currGame = Game()
+        let contentView = ContentView().environmentObject(currGame)
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
@@ -62,3 +64,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+
+struct SceneDelegate_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
+}
