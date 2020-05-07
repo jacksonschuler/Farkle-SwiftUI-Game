@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+// Defines a button to move to the InGameView
 struct StartGameButton: View {
     var body: some View {
         Button(action: {

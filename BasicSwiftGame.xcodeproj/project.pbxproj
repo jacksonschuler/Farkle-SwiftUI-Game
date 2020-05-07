@@ -30,7 +30,7 @@
 		BF60C4E324607DBD0045D2FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF60C4E124607DBD0045D2FF /* LaunchScreen.storyboard */; };
 		F67E69BB2462732000E68E1E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E69BA2462732000E68E1E /* Player.swift */; };
 		F67E69C02462785A00E68E1E /* AddPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E69BF2462785A00E68E1E /* AddPlayerView.swift */; };
-		F6AD39D12463B0B1007B6100 /* SubmitNameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AD39D02463B0B1007B6100 /* SubmitNameButton.swift */; };
+		F6AD39D12463B0B1007B6100 /* SubmitNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AD39D02463B0B1007B6100 /* SubmitNameView.swift */; };
 		F6AD39D32463B0C6007B6100 /* StartGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AD39D22463B0C6007B6100 /* StartGameButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,7 +60,7 @@
 		BF60C4E424607DBD0045D2FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F67E69BA2462732000E68E1E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		F67E69BF2462785A00E68E1E /* AddPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerView.swift; sourceTree = "<group>"; };
-		F6AD39D02463B0B1007B6100 /* SubmitNameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitNameButton.swift; sourceTree = "<group>"; };
+		F6AD39D02463B0B1007B6100 /* SubmitNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitNameView.swift; sourceTree = "<group>"; };
 		F6AD39D22463B0C6007B6100 /* StartGameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,8 +128,9 @@
 		BF60C4D524607DBC0045D2FF /* BasicSwiftGame */ = {
 			isa = PBXGroup;
 			children = (
+				F61DEB332464A7170027E2D8 /* ScoreBoardView */,
 				BF349741246202F5007F8C0A /* RulesView */,
-				F67E69BE2462780F00E68E1E /* AddPlayer */,
+				F67E69BE2462780F00E68E1E /* AddPlayerView */,
 				BF60C4DA24607DBC0045D2FF /* ContentView.swift */,
 				A854B66A24649CC7000DC53C /* Objects */,
 				A854B66724649C78000DC53C /* InGameView */,
@@ -154,14 +155,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		F67E69BE2462780F00E68E1E /* AddPlayer */ = {
+		F61DEB332464A7170027E2D8 /* ScoreBoardView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ScoreBoardView;
+			sourceTree = "<group>";
+		};
+		F67E69BE2462780F00E68E1E /* AddPlayerView */ = {
 			isa = PBXGroup;
 			children = (
 				F67E69BF2462785A00E68E1E /* AddPlayerView.swift */,
-				F6AD39D02463B0B1007B6100 /* SubmitNameButton.swift */,
+				F6AD39D02463B0B1007B6100 /* SubmitNameView.swift */,
 				F6AD39D22463B0C6007B6100 /* StartGameButton.swift */,
 			);
-			path = AddPlayer;
+			path = AddPlayerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +248,7 @@
 				A854B66224647029000DC53C /* Die.swift in Sources */,
 				BF34974B2462213B007F8C0A /* RuleScoringItemView.swift in Sources */,
 				A819B5732460C3300058D76E /* MenuListView.swift in Sources */,
-				F6AD39D12463B0B1007B6100 /* SubmitNameButton.swift in Sources */,
+				F6AD39D12463B0B1007B6100 /* SubmitNameView.swift in Sources */,
 				A819B5712460C2A50058D76E /* ContentHeaderView.swift in Sources */,
 				BF3497452462146E007F8C0A /* RulesListView.swift in Sources */,
 				BF60C4D924607DBC0045D2FF /* SceneDelegate.swift in Sources */,

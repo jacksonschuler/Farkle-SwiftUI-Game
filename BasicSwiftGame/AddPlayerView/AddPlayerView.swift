@@ -8,23 +8,12 @@
 
 import SwiftUI
 
-func submitAction(player_name: String) {
-    
-}
-
 struct AddPlayerView: View {
     
-    @State var Name: String = ""
-    var players: [Player]!
-    
     var body: some View {
-        
         VStack(alignment: .center, spacing: 10) {
             Text("Enter Player's Name")
-            TextField("NAME", text: $Name)
-                .multilineTextAlignment(.center)
-            
-            SubmitNameButton(name: self.Name)
+            SubmitNameView()
             StartGameButton()
         }
     }

@@ -12,6 +12,7 @@ import Foundation
 class Game: ObservableObject {
     // temp flag used to refresh the view
     @Published var flag: Int = 1
+    
     //List stores all Die Objects used in the game
     @Published var DiceList = [
             Die.init(id: 0, result: 1),
@@ -20,4 +21,7 @@ class Game: ObservableObject {
             Die.init(id: 3, result: 1),
             Die.init(id: 4, result: 1),
             Die.init(id: 5, result: 1)]
+    
+    //List of all players in the current game
+    @Published var PlayerList = [Player]()
 }
