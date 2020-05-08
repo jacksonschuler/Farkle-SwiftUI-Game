@@ -9,14 +9,14 @@
 import Foundation
 
 // A class to represent a player in the game
-class Player {
+class Player: Identifiable {
     
-    let name: String     // players name
+    let id: String       // players name
     var score: Int  = 0  // players current score
     
     // Initializes a new player
-    init(player_name: String) {
-        self.name = player_name
+    init(id: String) {
+        self.id = id
     }
     
     // Increments players score by given number of points

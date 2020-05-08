@@ -8,16 +8,14 @@
 
 import SwiftUI
 
+// Defines a button to move to the InGameView
 struct StartGameButton: View {
     var body: some View {
-        Button(action: {
-            
-        }) {
-            Text("Start Game")
-        }.padding(10.0)
-            .overlay(RoundedRectangle(cornerRadius: 10.0)
-                .stroke(lineWidth: 2.0)
-        )
+        VStack {
+            NavigationLink(destination: InGameDiceView()){
+                Text("Start Game")
+            }
+        }
     }
 }
 
