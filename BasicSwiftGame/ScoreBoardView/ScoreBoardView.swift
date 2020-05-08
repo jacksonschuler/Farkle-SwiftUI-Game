@@ -8,34 +8,52 @@
 
 import SwiftUI
 
+// Displays a score board with all current players
+// and their score
 struct ScoreBoardView: View {
     
-    var p:Player = Player(id: "Robert")
+    //var p:Player = Player(id: "Robert")
+    var cols:[String] = ["Name", "Score"]
+    @EnvironmentObject var curGame:Game
     
     var body: some View {
         VStack(spacing: 10) {
             Text("Scoreboard")
                 .font(.title)
                 .underline()
-            HStack(alignment: .firstTextBaseline) {
-                Text("Name")
-                Text("Score")
-            }
+            
             HStack {
-                List(0..<5) {item in
-                    Text("\(self.p.id)")
-                }
-                List(0..<5) {item in
-                    Text("\(self.p.score)")
+                ForEach(0..<cols.count) { c in
+                    if self.cols[c] == "Name" {
+                        VStack {
+                            Text("\(self.cols[c])")
+                                .font(.headline)
+                                .underline()
+                            ForEach(0..<self.curGame.PlayerList.count) { i in
+                                Text("\(self.curGame.PlayerList[i].id)")
+                            }
+                        }
+                    } else {
+                        VStack {
+                            Text("\(self.cols[c])")
+                                .font(.headline)
+                                .underline()
+                            ForEach(0..<self.curGame.PlayerList.count) { i in
+                                Text("\(self.curGame.PlayerList[i].score)")
+                            }
+                        }
+                    }
+                    
                 }
             }
-            Spacer()
+            
+            //Spacer()
         }
     }
 }
 
 struct ScoreBoardView_Previews: PreviewProvider {
     static var previews: some View {
-        ScoreBoardView()
+        ScoreBoardView().environmentObject(Game())
     }
 }

@@ -35,6 +35,8 @@
 		F6AD39D12463B0B1007B6100 /* SubmitNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AD39D02463B0B1007B6100 /* SubmitNameView.swift */; };
 		F6AD39D32463B0C6007B6100 /* StartGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AD39D22463B0C6007B6100 /* StartGameButton.swift */; };
 		F6B7F3252465263000EE28AF /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B7F3242465263000EE28AF /* ScoreBoardView.swift */; };
+		F6B7F3272465F91200EE28AF /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B7F3262465F91200EE28AF /* TableView.swift */; };
+		F6B7F3292465FA9A00EE28AF /* TableColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B7F3282465FA9A00EE28AF /* TableColumn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		F6AD39D02463B0B1007B6100 /* SubmitNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitNameView.swift; sourceTree = "<group>"; };
 		F6AD39D22463B0C6007B6100 /* StartGameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameButton.swift; sourceTree = "<group>"; };
 		F6B7F3242465263000EE28AF /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
+		F6B7F3262465F91200EE28AF /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		F6B7F3282465FA9A00EE28AF /* TableColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableColumn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				F6B7F3242465263000EE28AF /* ScoreBoardView.swift */,
+				F6B7F3262465F91200EE28AF /* TableView.swift */,
+				F6B7F3282465FA9A00EE28AF /* TableColumn.swift */,
 			);
 			path = ScoreBoardView;
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6AD39D32463B0C6007B6100 /* StartGameButton.swift in Sources */,
+				F6B7F3272465F91200EE28AF /* TableView.swift in Sources */,
 				F6B7F3252465263000EE28AF /* ScoreBoardView.swift in Sources */,
 				BF60C4D724607DBC0045D2FF /* AppDelegate.swift in Sources */,
 				A854B66224647029000DC53C /* Die.swift in Sources */,
@@ -261,6 +268,7 @@
 				F6AD39D12463B0B1007B6100 /* SubmitNameView.swift in Sources */,
 				A819B5712460C2A50058D76E /* ContentHeaderView.swift in Sources */,
 				BF3497452462146E007F8C0A /* RulesListView.swift in Sources */,
+				F6B7F3292465FA9A00EE28AF /* TableColumn.swift in Sources */,
 				BF60C4D924607DBC0045D2FF /* SceneDelegate.swift in Sources */,
 				F67E69C02462785A00E68E1E /* AddPlayerView.swift in Sources */,
 				A854B66E2464AB06000DC53C /* EndTurnButton.swift in Sources */,

@@ -25,7 +25,9 @@ class Game: ObservableObject {
     
     //List of all players in the current game
     @Published var PlayerList = [Player]()
-
+    //@Published var PlayerList = [Player(id: "Ben"), Player(id: "Robert"), Player(id: "Jackson")]
+    
+    
     var currTurn: Int = 0
     var turnRollCount: Int = 0
     var turnRollCountFlag: Bool = true
