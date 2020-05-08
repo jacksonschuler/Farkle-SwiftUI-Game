@@ -35,6 +35,7 @@ struct InGameDiceView: View {
                 RollDiceButton()
                 EndTurnButton()
             }
+            Text("\(self.currGame.tempScore)")
         }
     }
 }

@@ -36,8 +36,13 @@ struct RollDiceButton: View {
                         die.isActive = false
                     }
                 }
+                
+                //calc potential score
+                self.currGame.tempScore = self.currGame.calc_score()
+                
                 //Flag to update image -- temp work around
                 self.currGame.flag = 1
+                
             }) {
                 Text("Roll Dice")
                     .fontWeight(.bold)
