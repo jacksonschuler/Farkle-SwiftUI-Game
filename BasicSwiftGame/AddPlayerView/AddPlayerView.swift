@@ -8,6 +8,10 @@
 
 import SwiftUI
 
+// Allows player(s) to enter a name and
+// add themselves to the game - once all
+// players have been added players can
+// start the game
 struct AddPlayerView: View {
     
     var body: some View {

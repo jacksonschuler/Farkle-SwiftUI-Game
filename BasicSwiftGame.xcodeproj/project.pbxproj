@@ -32,6 +32,7 @@
 		F67E69C02462785A00E68E1E /* AddPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E69BF2462785A00E68E1E /* AddPlayerView.swift */; };
 		F6AD39D12463B0B1007B6100 /* SubmitNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AD39D02463B0B1007B6100 /* SubmitNameView.swift */; };
 		F6AD39D32463B0C6007B6100 /* StartGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AD39D22463B0C6007B6100 /* StartGameButton.swift */; };
+		F6B7F3252465263000EE28AF /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B7F3242465263000EE28AF /* ScoreBoardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		F67E69BF2462785A00E68E1E /* AddPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerView.swift; sourceTree = "<group>"; };
 		F6AD39D02463B0B1007B6100 /* SubmitNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitNameView.swift; sourceTree = "<group>"; };
 		F6AD39D22463B0C6007B6100 /* StartGameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameButton.swift; sourceTree = "<group>"; };
+		F6B7F3242465263000EE28AF /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 		F61DEB332464A7170027E2D8 /* ScoreBoardView */ = {
 			isa = PBXGroup;
 			children = (
+				F6B7F3242465263000EE28AF /* ScoreBoardView.swift */,
 			);
 			path = ScoreBoardView;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6AD39D32463B0C6007B6100 /* StartGameButton.swift in Sources */,
+				F6B7F3252465263000EE28AF /* ScoreBoardView.swift in Sources */,
 				BF60C4D724607DBC0045D2FF /* AppDelegate.swift in Sources */,
 				A854B66224647029000DC53C /* Die.swift in Sources */,
 				BF34974B2462213B007F8C0A /* RuleScoringItemView.swift in Sources */,

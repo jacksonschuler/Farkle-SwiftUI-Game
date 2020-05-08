@@ -15,8 +15,8 @@ class Player: Identifiable {
     var score: Int  = 0  // players current score
     
     // Initializes a new player
-    init(player_name: String) {
-        self.id = player_name
+    init(id: String) {
+        self.id = id
     }
     
     // Increments players score by given number of points

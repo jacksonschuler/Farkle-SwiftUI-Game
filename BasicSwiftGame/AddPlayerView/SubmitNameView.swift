@@ -24,7 +24,7 @@ struct SubmitNameView: View {
             
             // submit button - add new player to list of players
             Button(action: {
-                self.curGame.PlayerList.append(Player(player_name: self.Name))
+                self.curGame.PlayerList.append(Player(id: self.Name))
                 self.Name = ""
             }) {
                 Text("Submit")

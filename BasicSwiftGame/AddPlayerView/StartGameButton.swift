@@ -16,7 +16,6 @@ struct StartGameButton: View {
                 Text("Start Game")
             }
         }
-        
     }
 }
 
