@@ -14,8 +14,8 @@ struct NewGameView: View {
                 Text("New Game")
                 Text("Get Game info here")
                 Text("Link to Game View")
-                NavigationLink(destination: InGameView()){
-                                   Text("New Game")
+                NavigationLink(destination: AddPlayerView()){
+                    Text("New Game")
                }
             }
         }
