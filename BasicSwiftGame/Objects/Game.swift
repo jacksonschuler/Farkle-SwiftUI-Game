@@ -25,6 +25,7 @@ class Game: ObservableObject {
     
     //List of all players in the current game
     @Published var PlayerList = [Player]()
+    //@Published var PlayerList = [Player(id: "Ben"), Player(id: "Robert"), Player(id: "Jackson")]
     
     var numPlayer: Int = 0
     var currTurn: Int = 0
