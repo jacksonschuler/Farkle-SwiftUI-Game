@@ -9,7 +9,6 @@
 import SwiftUI
 
 
-
 struct EndTurnButton: View {
     @EnvironmentObject var currGame: Game
     
@@ -22,16 +21,18 @@ struct EndTurnButton: View {
                 die.isActive = true
             }
             
-            // set player turn here
             
             //make call to calc final score
             
             //make call to update score in scoreboard
             
-            // reset turn count
+            // reset turn roll count
             self.currGame.turnRollCountFlag = true
             self.currGame.turnRollCount = 0
+            //reset estimated score
             self.currGame.tempScore = 0
+            //update player turn
+            self.currGame.currTurn = ((self.currGame.currTurn + 1) % self.currGame.numPlayer)
             self.currGame.flag = 1
             
        }){

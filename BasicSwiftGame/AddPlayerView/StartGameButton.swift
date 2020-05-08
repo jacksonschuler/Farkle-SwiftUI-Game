@@ -10,11 +10,15 @@ import SwiftUI
 
 // Defines a button to move to the InGameView
 struct StartGameButton: View {
+    @EnvironmentObject var currGame: Game
+    
     var body: some View {
         VStack {
             NavigationLink(destination: InGameDiceView()){
                 Text("Start Game")
-            }
+            }.simultaneousGesture(TapGesture().onEnded{
+                self.currGame.set_numPlayer()
+            })
         }
     }
 }

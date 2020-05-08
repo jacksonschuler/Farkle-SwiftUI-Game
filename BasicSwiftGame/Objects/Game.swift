@@ -25,7 +25,8 @@ class Game: ObservableObject {
     
     //List of all players in the current game
     @Published var PlayerList = [Player]()
-
+    
+    var numPlayer: Int = 0
     var currTurn: Int = 0
     var turnRollCount: Int = 0
     var turnRollCountFlag: Bool = true
@@ -100,7 +101,9 @@ class Game: ObservableObject {
         return score
     }
 
-
+    func set_numPlayer(){
+        self.numPlayer = self.PlayerList.count
+    }
 
 
 

@@ -35,7 +35,15 @@ struct InGameDiceView: View {
                 RollDiceButton()
                 EndTurnButton()
             }
+            //temp display of variables
+            Text("Temp Score")
             Text("\(self.currGame.tempScore)")
+            Text("Num Player")
+            Text("\(self.currGame.numPlayer)")
+            Text("Player Turn")
+            Text("\(self.currGame.currTurn)")
+            Text("Player 1 username")
+            Text("\(self.currGame.PlayerList[self.currGame.currTurn].id)")
         }
     }
 }
