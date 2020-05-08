@@ -36,7 +36,7 @@ struct InGameDiceView: View {
                 EndTurnButton()
             }
             //temp display of variables
-            Text("Temp Score")
+            Text("Turn Score")
             Text("\(self.currGame.tempScore)")
             Text("Player Turn")
             Text("\(self.currGame.currTurn)")
