@@ -26,7 +26,6 @@ struct InGameSingleDiceView: View {
                     .resizable()
                     .scaledToFit()
                     .padding()
-                    
             }
             .disabled(!self.currGame.DiceList[self.index].isActive)
         }
