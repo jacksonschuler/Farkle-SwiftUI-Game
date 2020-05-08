@@ -40,10 +40,14 @@ struct InGameDiceView: View {
             Text("\(self.currGame.tempScore)")
             Text("Player Turn")
             Text("\(self.currGame.currTurn)")
-            Text("Player username")
-            Text("\(self.currGame.PlayerList[self.currGame.currTurn].id)")
-            Text("Player Score")
-            Text("\(self.currGame.PlayerList[self.currGame.currTurn].score)")
+            if(self.currGame.numPlayer > 0){
+                Text("Player username")
+                Text("\(self.currGame.PlayerList[self.currGame.currTurn].id)")
+                Text("Player Score")
+                Text("\(self.currGame.PlayerList[self.currGame.currTurn].score)")
+
+            }
+
         }
     }
 }

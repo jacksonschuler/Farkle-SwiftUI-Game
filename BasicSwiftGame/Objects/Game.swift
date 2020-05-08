@@ -16,16 +16,16 @@ class Game: ObservableObject {
     
     //List stores all Die Objects used in the game
     @Published var DiceList = [
-            Die.init(id: 0, result: 1),
-            Die.init(id: 1, result: 1),
-            Die.init(id: 2, result: 1),
-            Die.init(id: 3, result: 1),
-            Die.init(id: 4, result: 1),
-            Die.init(id: 5, result: 1)]
+            Die.init(id: 0, result: 0),
+            Die.init(id: 1, result: 0),
+            Die.init(id: 2, result: 0),
+            Die.init(id: 3, result: 0),
+            Die.init(id: 4, result: 0),
+            Die.init(id: 5, result: 0)]
     
     //List of all players in the current game
-    @Published var PlayerList = [Player]()
-    //@Published var PlayerList = [Player(id: "Ben"), Player(id: "Robert"), Player(id: "Jackson")]
+//    @Published var PlayerList = [Player]()
+    @Published var PlayerList = [Player(id: "Ben"), Player(id: "Robert"), Player(id: "Jackson")]
     
     var numPlayer: Int = 0
     var currTurn: Int = 0
@@ -101,13 +101,28 @@ class Game: ObservableObject {
         
         return score
     }
-
+    
+    // Calculates the number of players in the game
     func set_numPlayer(){
         self.numPlayer = self.PlayerList.count
     }
 
-
-
+    //Resets all of the game specific values
+    func reset_game(){
+        self.numPlayer = 0
+        self.turnRollCount = 0
+        self.turnRollCountFlag = true
+        self.tempScore = 0
+        
+        //clear player array
+        self.PlayerList.removeAll()
+        
+        //reset all dice
+        for die in self.DiceList{
+            die.result = 0
+        }
+        
+    }
 
 
 }

@@ -14,7 +14,7 @@ struct StartGameButton: View {
     
     var body: some View {
         VStack {
-            NavigationLink(destination: InGameDiceView()){
+            NavigationLink(destination: InGameView()){
                 Text("Start Game")
             }.simultaneousGesture(TapGesture().onEnded{
                 self.currGame.set_numPlayer()
