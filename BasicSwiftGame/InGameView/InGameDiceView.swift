@@ -38,12 +38,12 @@ struct InGameDiceView: View {
             //temp display of variables
             Text("Temp Score")
             Text("\(self.currGame.tempScore)")
-            Text("Num Player")
-            Text("\(self.currGame.numPlayer)")
             Text("Player Turn")
             Text("\(self.currGame.currTurn)")
-            Text("Player 1 username")
+            Text("Player username")
             Text("\(self.currGame.PlayerList[self.currGame.currTurn].id)")
+            Text("Player Score")
+            Text("\(self.currGame.PlayerList[self.currGame.currTurn].score)")
         }
     }
 }

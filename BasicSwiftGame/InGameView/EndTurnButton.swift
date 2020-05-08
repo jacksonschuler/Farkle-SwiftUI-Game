@@ -12,8 +12,6 @@ import SwiftUI
 struct EndTurnButton: View {
     @EnvironmentObject var currGame: Game
     
-    @State var tempScore : Int = 0
-    
     var body: some View {
         Button(action:{
            for die in self.currGame.DiceList {
@@ -23,8 +21,7 @@ struct EndTurnButton: View {
             
             
             //make call to calc final score
-            
-            //make call to update score in scoreboard
+            self.currGame.PlayerList[self.currGame.currTurn].incr_score(points: self.currGame.tempScore)
             
             // reset turn roll count
             self.currGame.turnRollCountFlag = true
