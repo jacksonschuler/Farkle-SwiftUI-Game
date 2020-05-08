@@ -10,6 +10,7 @@ import Foundation
 
 //A class to represent the Game Object
 class Game: ObservableObject {
+
     // temp flag used to refresh the view
     @Published var flag: Int = 1
     
@@ -24,4 +25,8 @@ class Game: ObservableObject {
     
     //List of all players in the current game
     @Published var PlayerList = [Player]()
+
+    var currTurn: Int = 0
+    var turnRollCount: Int = 0
+    var turnRollCountFlag: Bool = true
 }

@@ -31,18 +31,9 @@ struct InGameDiceView: View {
                     InGameSingleDiceView(index: 5)  // Die 5
                 }
             }
-            Button(action: {
-                //Flag to update image -- temp work around
-                self.currGame.flag = Int.random(in: 1...6)
-                //Update die values on roll
-                self.currGame.DiceList[0].result = Int.random(in: 1...6)
-                self.currGame.DiceList[1].result = Int.random(in: 1...6)
-                self.currGame.DiceList[2].result = Int.random(in: 1...6)
-                self.currGame.DiceList[3].result = Int.random(in: 1...6)
-                self.currGame.DiceList[4].result = Int.random(in: 1...6)
-                self.currGame.DiceList[5].result = Int.random(in: 1...6)
-            }) {
-                Text("Roll Dice")
+            HStack {
+                RollDiceButton()
+                EndTurnButton()
             }
         }
     }
