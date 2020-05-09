@@ -13,7 +13,7 @@ struct MenuListView: View {
         NavigationView{
             VStack {
                 ContentHeaderView()
-                NavigationLink(destination: NewGameView()){
+                NavigationLink(destination: AddPlayerView()){
                     Text("Create New Game")
                         .padding()
                         .font(.headline)

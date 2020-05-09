@@ -14,7 +14,7 @@ import SwiftUI
  */
 struct InGameDiceView: View {
     @EnvironmentObject var currGame: Game
-
+    
     var body: some View {
         VStack {
             VStack{
@@ -35,6 +35,13 @@ struct InGameDiceView: View {
                 RollDiceButton()
                 EndTurnButton()
             }
+            //temp display of variables
+            
+            BottomScreenScoreView()
+            
+            
+
+
         }
     }
 }
@@ -44,3 +51,5 @@ struct InGameDiceView_Previews: PreviewProvider {
         InGameDiceView().environmentObject(Game())
     }
 }
+
+

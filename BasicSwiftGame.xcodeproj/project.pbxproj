@@ -24,6 +24,7 @@
 		BF34974924621FA5007F8C0A /* RuleScoringHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34974824621FA5007F8C0A /* RuleScoringHeaderView.swift */; };
 		BF34974B2462213B007F8C0A /* RuleScoringItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34974A2462213B007F8C0A /* RuleScoringItemView.swift */; };
 		BF34974D24622147007F8C0A /* RuleScoringListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34974C24622147007F8C0A /* RuleScoringListView.swift */; };
+		BF34975124676484007F8C0A /* BottomScreenScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34975024676484007F8C0A /* BottomScreenScoreView.swift */; };
 		BF60C4D724607DBC0045D2FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60C4D624607DBC0045D2FF /* AppDelegate.swift */; };
 		BF60C4D924607DBC0045D2FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60C4D824607DBC0045D2FF /* SceneDelegate.swift */; };
 		BF60C4DB24607DBC0045D2FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60C4DA24607DBC0045D2FF /* ContentView.swift */; };
@@ -32,8 +33,11 @@
 		BF60C4E324607DBD0045D2FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF60C4E124607DBD0045D2FF /* LaunchScreen.storyboard */; };
 		F67E69BB2462732000E68E1E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E69BA2462732000E68E1E /* Player.swift */; };
 		F67E69C02462785A00E68E1E /* AddPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67E69BF2462785A00E68E1E /* AddPlayerView.swift */; };
-		F6AD39D12463B0B1007B6100 /* SubmitNameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AD39D02463B0B1007B6100 /* SubmitNameButton.swift */; };
+		F6AD39D12463B0B1007B6100 /* SubmitNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AD39D02463B0B1007B6100 /* SubmitNameView.swift */; };
 		F6AD39D32463B0C6007B6100 /* StartGameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AD39D22463B0C6007B6100 /* StartGameButton.swift */; };
+		F6B7F3252465263000EE28AF /* ScoreBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B7F3242465263000EE28AF /* ScoreBoardView.swift */; };
+		F6B7F3272465F91200EE28AF /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B7F3262465F91200EE28AF /* TableView.swift */; };
+		F6B7F3292465FA9A00EE28AF /* TableColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B7F3282465FA9A00EE28AF /* TableColumn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,7 @@
 		BF34974824621FA5007F8C0A /* RuleScoringHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleScoringHeaderView.swift; sourceTree = "<group>"; };
 		BF34974A2462213B007F8C0A /* RuleScoringItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleScoringItemView.swift; sourceTree = "<group>"; };
 		BF34974C24622147007F8C0A /* RuleScoringListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleScoringListView.swift; sourceTree = "<group>"; };
+		BF34975024676484007F8C0A /* BottomScreenScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomScreenScoreView.swift; sourceTree = "<group>"; };
 		BF60C4D324607DBC0045D2FF /* BasicSwiftGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicSwiftGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF60C4D624607DBC0045D2FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF60C4D824607DBC0045D2FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,8 +69,11 @@
 		BF60C4E424607DBD0045D2FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F67E69BA2462732000E68E1E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		F67E69BF2462785A00E68E1E /* AddPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlayerView.swift; sourceTree = "<group>"; };
-		F6AD39D02463B0B1007B6100 /* SubmitNameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitNameButton.swift; sourceTree = "<group>"; };
+		F6AD39D02463B0B1007B6100 /* SubmitNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitNameView.swift; sourceTree = "<group>"; };
 		F6AD39D22463B0C6007B6100 /* StartGameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameButton.swift; sourceTree = "<group>"; };
+		F6B7F3242465263000EE28AF /* ScoreBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardView.swift; sourceTree = "<group>"; };
+		F6B7F3262465F91200EE28AF /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		F6B7F3282465FA9A00EE28AF /* TableColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableColumn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,7 @@
 				A898B3142461D3DA00E67442 /* InGameDiceView.swift */,
 				A854B66D2464AB06000DC53C /* EndTurnButton.swift */,
 				A854B66B2464AAB8000DC53C /* RollDiceButton.swift */,
+				BF34975024676484007F8C0A /* BottomScreenScoreView.swift */,
 			);
 			path = InGameView;
 			sourceTree = "<group>";
@@ -134,12 +143,13 @@
 		BF60C4D524607DBC0045D2FF /* BasicSwiftGame */ = {
 			isa = PBXGroup;
 			children = (
+				F61DEB332464A7170027E2D8 /* ScoreBoardView */,
 				BF349741246202F5007F8C0A /* RulesView */,
-				F67E69BE2462780F00E68E1E /* AddPlayer */,
-				BF60C4DA24607DBC0045D2FF /* ContentView.swift */,
+				F67E69BE2462780F00E68E1E /* AddPlayerView */,
 				A854B66A24649CC7000DC53C /* Objects */,
 				A854B66724649C78000DC53C /* InGameView */,
 				A819B5742460CA8D0058D76E /* NewGameView.swift */,
+				BF60C4DA24607DBC0045D2FF /* ContentView.swift */,
 				A819B5722460C3300058D76E /* MenuListView.swift */,
 				A819B5702460C2A50058D76E /* ContentHeaderView.swift */,
 				BF60C4DC24607DBD0045D2FF /* Assets.xcassets */,
@@ -160,14 +170,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		F67E69BE2462780F00E68E1E /* AddPlayer */ = {
+		F61DEB332464A7170027E2D8 /* ScoreBoardView */ = {
+			isa = PBXGroup;
+			children = (
+				F6B7F3242465263000EE28AF /* ScoreBoardView.swift */,
+				F6B7F3262465F91200EE28AF /* TableView.swift */,
+				F6B7F3282465FA9A00EE28AF /* TableColumn.swift */,
+			);
+			path = ScoreBoardView;
+			sourceTree = "<group>";
+		};
+		F67E69BE2462780F00E68E1E /* AddPlayerView */ = {
 			isa = PBXGroup;
 			children = (
 				F67E69BF2462785A00E68E1E /* AddPlayerView.swift */,
-				F6AD39D02463B0B1007B6100 /* SubmitNameButton.swift */,
+				F6AD39D02463B0B1007B6100 /* SubmitNameView.swift */,
 				F6AD39D22463B0C6007B6100 /* StartGameButton.swift */,
 			);
-			path = AddPlayer;
+			path = AddPlayerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,13 +262,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6AD39D32463B0C6007B6100 /* StartGameButton.swift in Sources */,
+				F6B7F3272465F91200EE28AF /* TableView.swift in Sources */,
+				F6B7F3252465263000EE28AF /* ScoreBoardView.swift in Sources */,
 				BF60C4D724607DBC0045D2FF /* AppDelegate.swift in Sources */,
 				A854B66224647029000DC53C /* Die.swift in Sources */,
 				BF34974B2462213B007F8C0A /* RuleScoringItemView.swift in Sources */,
 				A819B5732460C3300058D76E /* MenuListView.swift in Sources */,
-				F6AD39D12463B0B1007B6100 /* SubmitNameButton.swift in Sources */,
+				F6AD39D12463B0B1007B6100 /* SubmitNameView.swift in Sources */,
 				A819B5712460C2A50058D76E /* ContentHeaderView.swift in Sources */,
 				BF3497452462146E007F8C0A /* RulesListView.swift in Sources */,
+				F6B7F3292465FA9A00EE28AF /* TableColumn.swift in Sources */,
 				BF60C4D924607DBC0045D2FF /* SceneDelegate.swift in Sources */,
 				F67E69C02462785A00E68E1E /* AddPlayerView.swift in Sources */,
 				A854B66E2464AB06000DC53C /* EndTurnButton.swift in Sources */,
@@ -260,6 +283,7 @@
 				BF34974324620349007F8C0A /* RulesHeaderView.swift in Sources */,
 				A854B66624649BD7000DC53C /* RulesView.swift in Sources */,
 				BF349747246215CC007F8C0A /* RuleListItemView.swift in Sources */,
+				BF34975124676484007F8C0A /* BottomScreenScoreView.swift in Sources */,
 				A819B5752460CA8D0058D76E /* NewGameView.swift in Sources */,
 				F67E69BB2462732000E68E1E /* Player.swift in Sources */,
 				A819B5792460E0B70058D76E /* InGameView.swift in Sources */,

@@ -20,10 +20,12 @@ struct RollDiceButton: View {
     var body: some View {
         HStack{
             Button(action: {
+                
                 //Update active die values on roll
                 for die in self.currGame.DiceList {
-                    if (die.isActive == true) {
+                    if (die.isActive == true || self.currGame.turnRollCount == 0) {
                         die.result = Int.random(in: 1...6)
+                        die.isActive = true
                     }
                 }
                 //update number of rolls this turn
@@ -36,8 +38,13 @@ struct RollDiceButton: View {
                         die.isActive = false
                     }
                 }
+                
+                //calc potential score
+                self.currGame.tempScore = self.currGame.calc_score()
+                
                 //Flag to update image -- temp work around
                 self.currGame.flag = 1
+                
             }) {
                 Text("Roll Dice")
                     .fontWeight(.bold)

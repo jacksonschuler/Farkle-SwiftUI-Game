@@ -8,23 +8,16 @@
 
 import SwiftUI
 
-func submitAction(player_name: String) {
-    
-}
-
+// Allows player(s) to enter a name and
+// add themselves to the game - once all
+// players have been added players can
+// start the game
 struct AddPlayerView: View {
     
-    @State var Name: String = ""
-    var players: [Player]!
-    
     var body: some View {
-        
         VStack(alignment: .center, spacing: 10) {
             Text("Enter Player's Name")
-            TextField("NAME", text: $Name)
-                .multilineTextAlignment(.center)
-            
-            SubmitNameButton(name: self.Name)
+            SubmitNameView()
             StartGameButton()
         }
     }

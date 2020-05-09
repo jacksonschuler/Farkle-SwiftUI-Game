@@ -26,7 +26,6 @@ struct InGameSingleDiceView: View {
                     .resizable()
                     .scaledToFit()
                     .padding()
-                    
             }
             .disabled(!self.currGame.DiceList[self.index].isActive)
         }
@@ -36,7 +35,7 @@ struct InGameSingleDiceView: View {
 
 struct InGameSingleDiceView_Previews: PreviewProvider {
     static var previews: some View {
-        InGameSingleDiceView(index: 1).environmentObject(Game())
+        InGameSingleDiceView(index: 0).environmentObject(Game())
     }
 }
 
