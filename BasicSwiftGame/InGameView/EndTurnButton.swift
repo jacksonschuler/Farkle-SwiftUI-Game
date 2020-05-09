@@ -19,7 +19,7 @@ struct EndTurnButton: View {
         Button(action:{
            for die in self.currGame.DiceList {
                 die.result = 0
-                die.isActive = true
+                die.isActive = false
             }
             
             

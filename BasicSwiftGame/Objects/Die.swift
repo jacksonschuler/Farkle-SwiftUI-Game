@@ -12,7 +12,7 @@ import Foundation
 class Die: Identifiable  {
     var id: Int                     // unique id
     var result: Int                 // result of the last roll
-    var isActive: Bool = true       // if die is currently active
+    var isActive: Bool = false       // if die is currently active
     
     //Initalizer for Die Object
     // id: unique id for die
