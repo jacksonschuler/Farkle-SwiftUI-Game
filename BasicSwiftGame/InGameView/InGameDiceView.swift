@@ -14,7 +14,7 @@ import SwiftUI
  */
 struct InGameDiceView: View {
     @EnvironmentObject var currGame: Game
-
+    
     var body: some View {
         VStack {
             VStack{
