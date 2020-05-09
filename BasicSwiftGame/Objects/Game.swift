@@ -32,7 +32,7 @@ class Game: ObservableObject {
     var turnRollCount: Int = 0
     var turnRollCountFlag: Bool = true
     var tempScore: Int = 0
-
+    var disableTurnButton: Bool = true
 
     /*
         calc_score

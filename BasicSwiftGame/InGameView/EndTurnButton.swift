@@ -22,6 +22,7 @@ struct EndTurnButton: View {
                 die.isActive = false
             }
             
+           
             
             //make call to calc final score
             self.currGame.PlayerList[self.currGame.currTurn].incr_score(points: self.currGame.tempScore)
@@ -31,6 +32,8 @@ struct EndTurnButton: View {
                 self.isShown = true
             }
             
+            //Prepare for next turn
+            
             // reset turn roll count
             self.currGame.turnRollCountFlag = true
             self.currGame.turnRollCount = 0
@@ -39,6 +42,8 @@ struct EndTurnButton: View {
             //update player turn
             self.currGame.currTurn = ((self.currGame.currTurn + 1) % self.currGame.numPlayer)
             self.currGame.flag = 1
+            //disable end turn button
+            self.currGame.disableTurnButton = true
        }){
            Text("End Turn")
                 .fontWeight(.bold)
@@ -54,7 +59,8 @@ struct EndTurnButton: View {
                 self.presentationMode.wrappedValue.dismiss()
             }))
         }
-        
+        .buttonStyle(PlainButtonStyle())
+        .disabled(self.currGame.disableTurnButton)
     }
 }
 

@@ -39,6 +39,12 @@ struct RollDiceButton: View {
                     }
                 }
                 
+                //activate end turn button
+                if(self.currGame.turnRollCount > 0) {
+                    self.currGame.disableTurnButton = false
+                }
+                           
+                
                 //calc potential score
                 self.currGame.tempScore = self.currGame.calc_score()
                 
