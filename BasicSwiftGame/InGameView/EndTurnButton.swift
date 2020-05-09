@@ -11,17 +11,25 @@ import SwiftUI
 
 struct EndTurnButton: View {
     @EnvironmentObject var currGame: Game
+    @State private var isShown: Bool = false
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
+        
         Button(action:{
            for die in self.currGame.DiceList {
                 die.result = 0
-                die.isActive = true
+                die.isActive = false
             }
             
             
             //make call to calc final score
             self.currGame.PlayerList[self.currGame.currTurn].incr_score(points: self.currGame.tempScore)
+            
+            // check if theres a winner
+            if(self.currGame.PlayerList[self.currGame.currTurn].score > 10000){
+                self.isShown = true
+            }
             
             // reset turn roll count
             self.currGame.turnRollCountFlag = true
@@ -31,7 +39,6 @@ struct EndTurnButton: View {
             //update player turn
             self.currGame.currTurn = ((self.currGame.currTurn + 1) % self.currGame.numPlayer)
             self.currGame.flag = 1
-            
        }){
            Text("End Turn")
                 .fontWeight(.bold)
@@ -42,6 +49,12 @@ struct EndTurnButton: View {
                 .padding(10)
                 .border(Color.red, width: 5)
        }
+        .alert(isPresented: self.$isShown) {
+            Alert(title: Text("Game Over!"), message: Text("The Winner is \(self.currGame.PlayerList[self.currGame.currTurn].id)!"), dismissButton: Alert.Button.default(Text("End Game"), action:{
+                self.presentationMode.wrappedValue.dismiss()
+            }))
+        }
+        
     }
 }
 
