@@ -23,7 +23,7 @@ struct InGameView: View {
                 Text("End Game")
             }
             .alert(isPresented: $showingAlert) {
-                Alert(title: Text("Game Over!"), message: Text("The Winner is \(self.currGame.PlayerList[self.currGame.currTurn].id)!"), dismissButton: Alert.Button.default(Text("End Game"), action:{
+                Alert(title: Text("Game Over!"), message: currGame.find_winner(), dismissButton: Alert.Button.default(Text("End Game"), action:{
                     self.presentationMode.wrappedValue.dismiss()
                     self.currGame.reset_game()
                   }))
