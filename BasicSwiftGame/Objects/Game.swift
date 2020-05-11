@@ -35,6 +35,18 @@ class Game: ObservableObject {
     var tempScore: Int = 0
     var disableTurnButton: Bool = true
 
+    func get_playerlist() -> [String] {
+        
+        var list:[String] = []
+        
+        for item in self.PlayerList {
+            list.append("\(item.id)")
+        }
+        
+        return list
+    }
+    
+    
     /*
         calc_score
         :params - 6 integers that represent the players stored dice they wish to score
