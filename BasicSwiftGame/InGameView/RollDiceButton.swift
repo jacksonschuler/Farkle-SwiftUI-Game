@@ -31,7 +31,7 @@ struct RollDiceButton: View {
                 //update number of rolls this turn
                 self.currGame.turnRollCount += 1
                 
-                if(self.currGame.turnRollCount >= 4){
+                if(self.currGame.turnRollCount > 4){
                     self.currGame.turnRollCountFlag = false
                     // set all die to inactive
                     for die in self.currGame.DiceList {

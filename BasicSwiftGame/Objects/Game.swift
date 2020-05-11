@@ -123,6 +123,12 @@ class Game: ObservableObject {
         }
         
     }
+    
+    //calc the remaining rolls left in the turn
+    func calc_rolls_remaining() -> Int {
+        return 5 - self.turnRollCount
+        
+    }
 
 
 }

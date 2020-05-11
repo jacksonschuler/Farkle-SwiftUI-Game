@@ -9,8 +9,8 @@
 import SwiftUI
 
 struct BottomScreenScoreView: View {
-    
     @EnvironmentObject var currGame: Game
+    
     
     var body: some View {
         HStack() {
@@ -20,11 +20,11 @@ struct BottomScreenScoreView: View {
                     .multilineTextAlignment(.leading)
                     .padding(.top)
                 Text("\(self.currGame.tempScore)")
-                Text("Player Turn")
+                Text("Remaining Rolls")
                     .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
                     .padding(.top)
-                Text("\(self.currGame.currTurn)")
+                Text("\(self.currGame.calc_rolls_remaining())")
             }
             .padding(.horizontal)
             VStack(alignment: .leading){
