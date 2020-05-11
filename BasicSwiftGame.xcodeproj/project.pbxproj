@@ -24,6 +24,7 @@
 		BF34974924621FA5007F8C0A /* RuleScoringHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34974824621FA5007F8C0A /* RuleScoringHeaderView.swift */; };
 		BF34974B2462213B007F8C0A /* RuleScoringItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34974A2462213B007F8C0A /* RuleScoringItemView.swift */; };
 		BF34974D24622147007F8C0A /* RuleScoringListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34974C24622147007F8C0A /* RuleScoringListView.swift */; };
+		BF34975124676484007F8C0A /* BottomScreenScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF34975024676484007F8C0A /* BottomScreenScoreView.swift */; };
 		BF60C4D724607DBC0045D2FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60C4D624607DBC0045D2FF /* AppDelegate.swift */; };
 		BF60C4D924607DBC0045D2FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60C4D824607DBC0045D2FF /* SceneDelegate.swift */; };
 		BF60C4DB24607DBC0045D2FF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60C4DA24607DBC0045D2FF /* ContentView.swift */; };
@@ -57,6 +58,7 @@
 		BF34974824621FA5007F8C0A /* RuleScoringHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleScoringHeaderView.swift; sourceTree = "<group>"; };
 		BF34974A2462213B007F8C0A /* RuleScoringItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleScoringItemView.swift; sourceTree = "<group>"; };
 		BF34974C24622147007F8C0A /* RuleScoringListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleScoringListView.swift; sourceTree = "<group>"; };
+		BF34975024676484007F8C0A /* BottomScreenScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomScreenScoreView.swift; sourceTree = "<group>"; };
 		BF60C4D324607DBC0045D2FF /* BasicSwiftGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicSwiftGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF60C4D624607DBC0045D2FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF60C4D824607DBC0045D2FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				A898B3142461D3DA00E67442 /* InGameDiceView.swift */,
 				A854B66D2464AB06000DC53C /* EndTurnButton.swift */,
 				A854B66B2464AAB8000DC53C /* RollDiceButton.swift */,
+				BF34975024676484007F8C0A /* BottomScreenScoreView.swift */,
 			);
 			path = InGameView;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				BF34974324620349007F8C0A /* RulesHeaderView.swift in Sources */,
 				A854B66624649BD7000DC53C /* RulesView.swift in Sources */,
 				BF349747246215CC007F8C0A /* RuleListItemView.swift in Sources */,
+				BF34975124676484007F8C0A /* BottomScreenScoreView.swift in Sources */,
 				A819B5752460CA8D0058D76E /* NewGameView.swift in Sources */,
 				F67E69BB2462732000E68E1E /* Player.swift in Sources */,
 				A819B5792460E0B70058D76E /* InGameView.swift in Sources */,

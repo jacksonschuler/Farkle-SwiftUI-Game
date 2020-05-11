@@ -36,17 +36,11 @@ struct InGameDiceView: View {
                 EndTurnButton()
             }
             //temp display of variables
-            Text("Turn Score")
-            Text("\(self.currGame.tempScore)")
-            Text("Player Turn")
-            Text("\(self.currGame.currTurn)")
-            if(self.currGame.numPlayer > 0){
-                Text("Player username")
-                Text("\(self.currGame.PlayerList[self.currGame.currTurn].id)")
-                Text("Player Score")
-                Text("\(self.currGame.PlayerList[self.currGame.currTurn].score)")
+            
+            BottomScreenScoreView()
+            
+            
 
-            }
 
         }
     }
@@ -57,3 +51,5 @@ struct InGameDiceView_Previews: PreviewProvider {
         InGameDiceView().environmentObject(Game())
     }
 }
+
+
