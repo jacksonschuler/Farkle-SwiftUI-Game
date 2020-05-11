@@ -25,6 +25,7 @@ struct BottomScreenScoreView: View {
                     .multilineTextAlignment(.leading)
                     .padding(.top)
                 Text("\(self.currGame.calc_rolls_remaining())")
+                Spacer().frame(height: 10)
             }
             .padding(.horizontal)
             VStack(alignment: .leading){
@@ -39,11 +40,12 @@ struct BottomScreenScoreView: View {
                         .multilineTextAlignment(.leading)
                         .padding(.top)
                     Text("\(self.currGame.PlayerList[self.currGame.currTurn].score)")
-                    
+                    Spacer().frame(height: 10)
                 }
             }
             .padding(.horizontal)
         }
+        .foregroundColor(Color(red: 255 / 255, green: 252 / 255, blue: 232 / 255))
         .padding(.horizontal)
     }
 }

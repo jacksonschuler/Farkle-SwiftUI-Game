@@ -146,9 +146,6 @@ class Game: ObservableObject {
                 maxPlayer = player
                 maxScore = player.score
             }
-          
-            print(maxScore)
-            print(maxPlayer.id)
         }
         // if no one has scored -- tie game
         if maxScore == 0 {

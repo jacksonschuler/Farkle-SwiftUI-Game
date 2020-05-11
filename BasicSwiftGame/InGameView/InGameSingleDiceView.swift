@@ -29,7 +29,7 @@ struct InGameSingleDiceView: View {
             }
             .disabled(!self.currGame.DiceList[self.index].isActive)
         }
-        .accentColor(.red)
+        .accentColor(Color(red: 221 / 255, green: 64 / 255, blue: 58 / 255))
     }
 }
 

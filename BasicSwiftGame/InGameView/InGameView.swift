@@ -34,6 +34,7 @@ struct InGameView: View {
         InGameDiceView()
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: ExitButton)
+        .background(Color(red: 62 / 255, green: 54 / 255, blue: 63 / 255))
     }
 }
 
