@@ -15,10 +15,22 @@ import SwiftUI
 struct AddPlayerView: View {
     
     var body: some View {
-        VStack(alignment: .center, spacing: 10) {
-            Text("Enter Player's Name")
+        VStack() {
+            AddPlayerTitle()
+            HStack {
+                Text("Add a New Player")
+                    .font(.headline)
+                    .padding(.bottom, -20)
+                    .padding(.leading, 20)
+                Spacer()
+            }
+            .padding(.bottom, 20)
             SubmitNameView()
-            StartGameButton()
+                .padding(.bottom)
+            CurrentPlayersTitle()
+            CurrentPlayersView()
+            Spacer()
+                
         }
     }
 }
