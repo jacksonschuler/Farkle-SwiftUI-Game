@@ -126,6 +126,7 @@ class Game: ObservableObject {
         self.turnRollCount = 0
         self.turnRollCountFlag = true
         self.tempScore = 0
+        self.currTurn = 0
         
         //clear player array
         self.PlayerList.removeAll()
