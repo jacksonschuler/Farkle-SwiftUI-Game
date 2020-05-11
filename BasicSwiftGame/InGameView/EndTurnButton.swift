@@ -22,8 +22,6 @@ struct EndTurnButton: View {
                 die.isActive = false
             }
             
-           
-            
             //make call to calc final score
             self.currGame.PlayerList[self.currGame.currTurn].incr_score(points: self.currGame.tempScore)
             
@@ -33,7 +31,6 @@ struct EndTurnButton: View {
             }
             
             //Prepare for next turn
-            
             // reset turn roll count
             self.currGame.turnRollCountFlag = true
             self.currGame.turnRollCount = 0
@@ -57,6 +54,7 @@ struct EndTurnButton: View {
         .alert(isPresented: self.$isShown) {
             Alert(title: Text("Game Over!"), message: Text("The Winner is \(self.currGame.PlayerList[self.currGame.currTurn].id)!"), dismissButton: Alert.Button.default(Text("End Game"), action:{
                 self.presentationMode.wrappedValue.dismiss()
+                self.currGame.reset_game()
             }))
         }
         .buttonStyle(PlainButtonStyle())
