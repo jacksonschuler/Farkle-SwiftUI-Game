@@ -13,6 +13,7 @@ struct CurrentPlayersTitle: View {
         HStack {
             Text("Current Players")
                 .font(.title)
+                .foregroundColor(Color(red: 255 / 255, green: 252 / 255, blue: 232 / 255))
                 .fontWeight(.heavy)
                 .padding(.all, 20)
             Spacer()

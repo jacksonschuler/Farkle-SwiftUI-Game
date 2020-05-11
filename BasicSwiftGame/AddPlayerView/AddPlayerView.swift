@@ -20,6 +20,7 @@ struct AddPlayerView: View {
             HStack {
                 Text("Add a New Player")
                     .font(.headline)
+                    .foregroundColor(Color(red: 255 / 255, green: 252 / 255, blue: 232 / 255))
                     .padding(.bottom, -20)
                     .padding(.leading, 20)
                 Spacer()
@@ -32,6 +33,7 @@ struct AddPlayerView: View {
             Spacer()
                 
         }
+        .background(Color(red: 62 / 255, green: 54 / 255, blue: 63 / 255))
     }
 }
 

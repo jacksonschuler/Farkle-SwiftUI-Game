@@ -31,18 +31,21 @@ struct SubmitNameView: View {
                 }) {
                     Text("Add Player")
                         .fontWeight(.bold)
-                        .font(.headline)
-                        .padding()
-                        .background(Color.red)
-                        .foregroundColor(.white)
-                        .padding(10)
-                        .border(Color.red, width: 5)
+                            .font(.headline)
+                            .padding()
+                            .background(Color(red: 221 / 255, green: 64 / 255, blue: 58 / 255))
+                            .cornerRadius(40)
+                            .foregroundColor(Color(red: 255 / 255, green: 252 / 255, blue: 232 / 255))
+                            .padding(10)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 40)
+                                    .stroke(Color(red: 221 / 255, green: 64 / 255, blue: 58 / 255), lineWidth: 5)
+                               )
                 }
-                .overlay(RoundedRectangle(cornerRadius: 10.0)
-                .stroke(lineWidth: 0)
-                )
-                StartGameButton()
+                Spacer().frame(width: 20)
+                StartGameButton().padding()
             }
+            .padding()
         }
     }
 }
