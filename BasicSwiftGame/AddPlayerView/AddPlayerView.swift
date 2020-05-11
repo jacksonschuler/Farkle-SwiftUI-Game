@@ -33,12 +33,12 @@ struct AddPlayerView: View {
             Spacer()
                 
         }
-        .background(Color(red: 62 / 255, green: 54 / 255, blue: 63 / 255))
+        .background(Color(red: 62 / 255, green: 54 / 255, blue: 63 / 255).edgesIgnoringSafeArea(.vertical))
     }
 }
 
 struct AddPlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        AddPlayerView()
+        AddPlayerView().environmentObject(Game())
     }
 }

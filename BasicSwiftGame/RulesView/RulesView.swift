@@ -7,7 +7,6 @@ struct RulesView: View {
             RulesListView()
             RuleScoringHeaderView()
             RuleScoringListView()
-            Spacer()
         }
     }
 }
