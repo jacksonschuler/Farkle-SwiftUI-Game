@@ -16,7 +16,6 @@ struct ContentView: View {
             MenuListView()
                 .navigationBarHidden(true)
         }
-        
     }
 }
 

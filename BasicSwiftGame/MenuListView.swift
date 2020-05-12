@@ -50,6 +50,7 @@ struct MenuListView: View {
 
             }
             .navigationBarTitle("", displayMode: .inline)
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
             .background(Color(red: 62 / 255, green: 54 / 255, blue: 63 / 255).edgesIgnoringSafeArea(.all))
 //            .navigationBarHidden(true)
             }
