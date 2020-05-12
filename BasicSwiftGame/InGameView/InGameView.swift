@@ -31,19 +31,37 @@ struct InGameView: View {
                        RoundedRectangle(cornerRadius: 20)
                            .stroke(Color(red: 255 / 255, green: 252 / 255, blue: 232 / 255), lineWidth: 5)
                     )
+                    .alert(isPresented: $showingAlert) {
+                        Alert(title: Text("Game Over!"), message: self.currGame.find_winner(), dismissButton: Alert.Button.default(Text("End Game"), action:{
+                            self.presentationMode.wrappedValue.dismiss()
+                            self.currGame.reset_game()
+                            }))
+                }
+        }
+    }
+    
+    var ScoreBoardButton: some View {
+        Button(action: {
+//            ScoreBoardView()
+        }) {
+            Text("Score Board")
+            .font(.body)
+            .padding(5)
+            .background(Color(red: 255 / 255, green: 252 / 255, blue: 232 / 255))
+            .cornerRadius(20)
+            .foregroundColor(Color(red: 221 / 255, green: 64 / 255, blue: 58 / 255))
+            .padding(5)
+            .overlay(
+               RoundedRectangle(cornerRadius: 20)
+                   .stroke(Color(red: 255 / 255, green: 252 / 255, blue: 232 / 255), lineWidth: 5)
+            )
             }
-            .alert(isPresented: $showingAlert) {
-                Alert(title: Text("Game Over!"), message: currGame.find_winner(), dismissButton: Alert.Button.default(Text("End Game"), action:{
-                    self.presentationMode.wrappedValue.dismiss()
-                    self.currGame.reset_game()
-                  }))
-              }
         }
     
     var body: some View {
         InGameDiceView()
         .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: ExitButton)
+        .navigationBarItems(leading: ExitButton, trailing: ScoreBoardButton)
         .background(Color(red: 62 / 255, green: 54 / 255, blue: 63 / 255).edgesIgnoringSafeArea(.vertical))
     }
 }

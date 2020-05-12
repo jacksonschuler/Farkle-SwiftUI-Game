@@ -14,11 +14,13 @@ struct SubmitNameView: View {
     
     @State var Name: String = ""  // players name
     @EnvironmentObject var curGame: Game  // game object
+    @ObservedObject var textFieldManager = TextFieldManager()
     
     var body: some View {
         VStack {
             // Textfield for user to enter name
-            TextField("Enter Player Name", text: $Name)
+
+            TextField("Enter Player Name", text: $textFieldManager.userInput)
                 .multilineTextAlignment(.center)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.leading)
@@ -27,8 +29,8 @@ struct SubmitNameView: View {
             // submit button - add new player to list of players
             HStack {
                 Button(action: {
-                    self.curGame.PlayerList.append(Player(id: self.Name))
-                    self.Name = ""
+                    self.curGame.PlayerList.append(Player(id: String(self.textFieldManager.userInput)))
+                    self.textFieldManager.userInput = ""
                 }) {
                     Text("Add Player")
                         .fontWeight(.bold)

@@ -51,6 +51,6 @@ struct BottomScreenScoreView: View {
 }
 struct BottomScreenScoreView_Previews: PreviewProvider {
     static var previews: some View {
-        BottomScreenScoreView()
+        BottomScreenScoreView().environmentObject(Game())
     }
 }
