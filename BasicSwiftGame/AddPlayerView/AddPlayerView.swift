@@ -46,7 +46,6 @@ struct AddPlayerView: View {
             }
             .padding(.bottom, 20)
             SubmitNameView()
-                .padding(.bottom)
             CurrentPlayersTitle()
             CurrentPlayersView()
             Spacer()
@@ -55,6 +54,7 @@ struct AddPlayerView: View {
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: BackBtn)
         .background(Color(red: 62 / 255, green: 54 / 255, blue: 63 / 255).edgesIgnoringSafeArea(.vertical))
+
     }
 }
 

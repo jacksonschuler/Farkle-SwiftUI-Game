@@ -11,6 +11,7 @@ import SwiftUI
 struct RulesHeaderView: View {
     var body: some View {
         HStack {
+            Spacer()
             Text("Rules")
                 .font(.headline)
                 .fontWeight(.bold)
@@ -21,6 +22,7 @@ struct RulesHeaderView: View {
                 .padding(10)
             Spacer()
         }
+        
     }
 }
 

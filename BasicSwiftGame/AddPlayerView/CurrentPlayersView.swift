@@ -22,7 +22,6 @@ struct CurrentPlayersView: View {
                         .background(Color(red: 255 / 255, green: 252 / 255, blue: 232 / 255))
                         .cornerRadius(40)
                         .foregroundColor(Color(red: 221 / 255, green: 64 / 255, blue: 58 / 255))
-                        .padding(10)
                 }.listRowBackground(Color(red: 62 / 255, green: 54 / 255, blue: 63 / 255))
             }
         }

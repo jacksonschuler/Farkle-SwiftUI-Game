@@ -15,7 +15,8 @@ struct CurrentPlayersTitle: View {
                 .font(.title)
                 .foregroundColor(Color(red: 255 / 255, green: 252 / 255, blue: 232 / 255))
                 .fontWeight(.heavy)
-                .padding(.all, 20)
+                .padding(.leading, 20)
+                .padding(.trailing, 20)
             Spacer()
         }
     }
