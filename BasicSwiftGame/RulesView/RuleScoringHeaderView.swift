@@ -11,6 +11,7 @@ import SwiftUI
 struct RuleScoringHeaderView: View {
     var body: some View {
         HStack {
+            Spacer()
             Text("Scoring")
                 .font(.headline)
                 .fontWeight(.bold)

@@ -14,8 +14,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             MenuListView()
-                .navigationBarHidden(true)
-        }
+        }.navigationBarHidden(true)
     }
 }
 

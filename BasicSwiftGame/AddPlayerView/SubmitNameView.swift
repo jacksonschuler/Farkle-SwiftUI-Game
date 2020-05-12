@@ -23,7 +23,8 @@ struct SubmitNameView: View {
             TextField("Enter Player Name", text: $textFieldManager.userInput)
                 .multilineTextAlignment(.center)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding(.all)
+                .padding(.leading)
+                .padding(.trailing)
             
             // submit button - add new player to list of players
             HStack {
@@ -51,7 +52,6 @@ struct SubmitNameView: View {
                     StartGameButton().padding()
                 }
             }
-            .padding()
         }
     }
 }

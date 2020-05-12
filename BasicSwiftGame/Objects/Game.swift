@@ -26,7 +26,7 @@ class Game: ObservableObject {
     
     //List of all players in the current game
     @Published var PlayerList = [Player]()
-    //@Published var PlayerList = [Player(id: "Ben"), Player(id: "Robert"), Player(id: "Jackson")]
+//    @Published var PlayerList = [Player(id: "Ben"), Player(id: "Robert"), Player(id: "Jackson")]
     
     var numPlayer: Int = 0
     var currTurn: Int = 0
@@ -126,6 +126,7 @@ class Game: ObservableObject {
         self.turnRollCount = 0
         self.turnRollCountFlag = true
         self.tempScore = 0
+        self.currTurn = 0
         
         //clear player array
         self.PlayerList.removeAll()
