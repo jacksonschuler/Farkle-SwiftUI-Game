@@ -45,7 +45,11 @@ struct SubmitNameView: View {
                                )
                 }
                 Spacer().frame(width: 20)
-                StartGameButton().padding()
+                
+                // Only display start game option when we have a single player
+                if self.curGame.PlayerList.count > 0 {
+                    StartGameButton().padding()
+                }
             }
             .padding()
         }

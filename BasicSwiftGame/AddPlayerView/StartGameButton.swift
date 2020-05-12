@@ -9,11 +9,14 @@ import SwiftUI
 
 // Defines a button to move to the InGameView
 struct StartGameButton: View {
+    
     @EnvironmentObject var currGame: Game
+    @State private var showingAlert = false
     
     var body: some View {
         VStack {
-            NavigationLink(destination: InGameView()){
+            NavigationLink(destination: InGameView())
+            {
                 Text("Start Game")
                    .fontWeight(.bold)
                    .font(.headline)
@@ -26,7 +29,8 @@ struct StartGameButton: View {
                        RoundedRectangle(cornerRadius: 40)
                            .stroke(Color(red: 221 / 255, green: 64 / 255, blue: 58 / 255), lineWidth: 5)
                       )
-            }.simultaneousGesture(TapGesture().onEnded{
+            }
+            .simultaneousGesture(TapGesture().onEnded {
                 self.currGame.set_numPlayer()
             })
         }
@@ -35,6 +39,6 @@ struct StartGameButton: View {
 
 struct StartGameButton_Previews: PreviewProvider {
     static var previews: some View {
-        StartGameButton()
+        StartGameButton().environmentObject(Game())
     }
 }
