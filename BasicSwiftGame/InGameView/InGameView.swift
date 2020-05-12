@@ -22,12 +22,21 @@ struct InGameView: View {
             }) {
                 Text("Exit Game")
             }
+    }
+    
+    var ScoreBoardButton: some View {
+        Button(action: {
+            //ScoreBoardView()
+        }) {
+            Text("Score Board")
         }
+    }
     
     var body: some View {
         InGameDiceView()
         .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: ExitButton)
+            .navigationBarItems(leading: ExitButton, trailing: ScoreBoardButton)
+            //.navigationBarItems(trailing: ScoreBoardButton)
     }
 }
 
