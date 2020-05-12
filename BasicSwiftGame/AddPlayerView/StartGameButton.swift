@@ -33,6 +33,8 @@ struct StartGameButton: View {
             .simultaneousGesture(TapGesture().onEnded {
                 self.currGame.set_numPlayer()
             })
+            // disable until there is at least 1 player
+            .disabled(currGame.PlayerList.count < 1)
         }
     }
 }

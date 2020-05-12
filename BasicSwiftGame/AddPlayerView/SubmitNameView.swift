@@ -15,6 +15,8 @@ struct SubmitNameView: View {
     @State var Name: String = ""  // players name
     @EnvironmentObject var curGame: Game  // game object
     @ObservedObject var textFieldManager = TextFieldManager()
+    @State private var showingAlert:Bool = false
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         VStack {
@@ -29,8 +31,15 @@ struct SubmitNameView: View {
             // submit button - add new player to list of players
             HStack {
                 Button(action: {
-                    self.curGame.PlayerList.append(Player(id: String(self.textFieldManager.userInput)))
-                    self.textFieldManager.userInput = ""
+                    
+                    // players name must contain at least 1 letter
+                    if self.textFieldManager.userInput.count == 0 {
+                        self.showingAlert.toggle()
+                    }
+                    else {
+                        self.curGame.PlayerList.append(Player(id: String(self.textFieldManager.userInput)))
+                        self.textFieldManager.userInput = ""
+                    }
                 }) {
                     Text("Add Player")
                         .fontWeight(.bold)
@@ -44,13 +53,14 @@ struct SubmitNameView: View {
                                 RoundedRectangle(cornerRadius: 40)
                                     .stroke(Color(red: 221 / 255, green: 64 / 255, blue: 58 / 255), lineWidth: 5)
                                )
+                    .alert(isPresented: $showingAlert) {
+                        Alert(title: Text("Error Adding Player"), message: Text("Player's name must contain one or more letters"), dismissButton: .default(Text("Ok")))
+                    }
                 }
                 Spacer().frame(width: 20)
                 
-                // Only display start game option when we have a single player
-                if self.curGame.PlayerList.count > 0 {
-                    StartGameButton().padding()
-                }
+                // start game button
+                StartGameButton().padding()
             }
         }
     }
