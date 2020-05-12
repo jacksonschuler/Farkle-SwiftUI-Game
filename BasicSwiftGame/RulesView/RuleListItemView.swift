@@ -17,8 +17,8 @@ struct RuleListItemView: View {
                 .padding(.leading)
                 .padding(.trailing, 5)
             Text(rule)
-                .padding(.top, 5)
-                .padding(.bottom, 5)
+                .padding(.all, 5)
+                .fixedSize(horizontal: false, vertical: true)
             Spacer()
         }
     }

@@ -13,14 +13,14 @@ import SwiftUI
 struct InGameView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @EnvironmentObject var currGame: Game
+    @State private var showingAlert = false
     
     //Exit button backs out of the game and resets the game state
     var ExitButton: some View {
             Button(action: {
-                self.presentationMode.wrappedValue.dismiss()
-                self.currGame.reset_game()
+                self.showingAlert = true
             }) {
-                Text("Exit Game")
+                Text("End Game")
             }
     }
     
@@ -29,6 +29,12 @@ struct InGameView: View {
             //ScoreBoardView()
         }) {
             Text("Score Board")
+            .alert(isPresented: $showingAlert) {
+                Alert(title: Text("Game Over!"), message: self.currGame.find_winner(), dismissButton: Alert.Button.default(Text("End Game"), action:{
+                    self.presentationMode.wrappedValue.dismiss()
+                    self.currGame.reset_game()
+                  }))
+              }
         }
     }
     
@@ -37,6 +43,8 @@ struct InGameView: View {
         .navigationBarBackButtonHidden(true)
             .navigationBarItems(leading: ExitButton, trailing: ScoreBoardButton)
             //.navigationBarItems(trailing: ScoreBoardButton)
+        .navigationBarItems(leading: ExitButton)
+        .background(Color(red: 62 / 255, green: 54 / 255, blue: 63 / 255).edgesIgnoringSafeArea(.vertical))
     }
 }
 

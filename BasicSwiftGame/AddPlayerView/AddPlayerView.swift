@@ -15,16 +15,30 @@ import SwiftUI
 struct AddPlayerView: View {
     
     var body: some View {
-        VStack(alignment: .center, spacing: 10) {
-            Text("Enter Player's Name")
+        VStack() {
+            AddPlayerTitle()
+            HStack {
+                Text("Add a New Player")
+                    .font(.headline)
+                    .foregroundColor(Color(red: 255 / 255, green: 252 / 255, blue: 232 / 255))
+                    .padding(.bottom, -20)
+                    .padding(.leading, 20)
+                Spacer()
+            }
+            .padding(.bottom, 20)
             SubmitNameView()
-            StartGameButton()
+                .padding(.bottom)
+            CurrentPlayersTitle()
+            CurrentPlayersView()
+            Spacer()
+                
         }
+        .background(Color(red: 62 / 255, green: 54 / 255, blue: 63 / 255).edgesIgnoringSafeArea(.vertical))
     }
 }
 
 struct AddPlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        AddPlayerView()
+        AddPlayerView().environmentObject(Game())
     }
 }

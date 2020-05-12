@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 //A class to represent the Game Object
 class Game: ObservableObject {
@@ -32,8 +33,20 @@ class Game: ObservableObject {
     var turnRollCount: Int = 0
     var turnRollCountFlag: Bool = true
     var tempScore: Int = 0
+    var disableTurnButton: Bool = true
 
-
+    func get_playerlist() -> [String] {
+        
+        var list:[String] = []
+        
+        for item in self.PlayerList {
+            list.append("\(item.id)")
+        }
+        
+        return list
+    }
+    
+    
     /*
         calc_score
         :params - 6 integers that represent the players stored dice they wish to score
@@ -123,6 +136,36 @@ class Game: ObservableObject {
         }
         
     }
+    
+    //calc the remaining rolls left in the turn
+    func calc_rolls_remaining() -> Int {
+        return 5 - self.turnRollCount
+        
+    }
 
-
+    // finds the current winner of the game
+    func find_winner() -> Text {
+        var maxScore = 0
+        var maxPlayer = Player(id: "")
+        for player in self.PlayerList {
+            //if two players have the same score and its not zero -- tie game
+            if player.score == maxScore && maxScore != 0 {
+                return Text("Tie Game!")
+            }
+            
+            // update hightest score
+            if player.score > maxScore {
+                maxPlayer = player
+                maxScore = player.score
+            }
+        }
+        // if no one has scored -- tie game
+        if maxScore == 0 {
+            return Text("Tie Game!")
+        } else {
+            // theres a winner
+            return Text("The Winner is \(maxPlayer.id) with \(maxPlayer.score) points!")
+        }
+    }
+    
 }
