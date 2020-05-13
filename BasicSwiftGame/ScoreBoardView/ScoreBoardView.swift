@@ -30,42 +30,7 @@ struct ScoreBoardView: View {
                 .padding(.top, 33)
                 .padding(.bottom, 20)
             
-            HStack (spacing: 50) {
-                ForEach(0..<cols.count) { c in
-                    if self.cols[c] == "Player" {
-                        VStack(spacing: 10) {
-                            Text("\(self.cols[c])")
-                                .font(.headline)
-                                .underline()
-                            ForEach(0..<self.curGame.PlayerList.count) { i in
-                                Text("\(self.curGame.PlayerList[i].id)")
-                            }
-                            .background(Color(red: 255 / 255, green: 252 / 255, blue: 232 / 255))
-                            Spacer()
-                        }
-                        .padding(.top, 15)
-                    } else {
-                        VStack(spacing: 10) {
-                            Text("\(self.cols[c])")
-                                .font(.headline)
-                                .underline()
-                            ForEach(0..<self.curGame.PlayerList.count) { i in
-                                Text("\(self.curGame.PlayerList[i].score)")
-                            }
-                            Spacer()
-                        }
-                        .padding(.top, 15)
-                    }
-                    
-                }
-            }
-            .padding(.horizontal, 60)
-            .background(Color(red: 255 / 255, green: 252 / 255, blue: 232 / 255))
-            .cornerRadius(20)
-            .padding(5)
-            .overlay(
-                RoundedRectangle(cornerRadius: 20)
-                .stroke(Color(red: 255 / 255, green: 252 / 255, blue: 232 / 255), lineWidth: 5))
+            TableView()
             Spacer()
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
@@ -80,3 +45,5 @@ struct ScoreBoardView_Previews: PreviewProvider {
         ScoreBoardView().environmentObject(Game())
     }
 }
+
+
