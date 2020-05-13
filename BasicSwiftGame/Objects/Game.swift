@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 //A class to represent the Game Object
 class Game: ObservableObject {
@@ -24,16 +25,28 @@ class Game: ObservableObject {
             Die.init(id: 5, result: 0)]
     
     //List of all players in the current game
-//    @Published var PlayerList = [Player]()
-    @Published var PlayerList = [Player(id: "Ben"), Player(id: "Robert"), Player(id: "Jackson")]
+    @Published var PlayerList = [Player]()
+//    @Published var PlayerList = [Player(id: "Ben"), Player(id: "Robert"), Player(id: "Jackson")]
     
     var numPlayer: Int = 0
     var currTurn: Int = 0
     var turnRollCount: Int = 0
     var turnRollCountFlag: Bool = true
     var tempScore: Int = 0
+    var disableTurnButton: Bool = true
 
-
+    func get_playerlist() -> [String] {
+        
+        var list:[String] = []
+        
+        for item in self.PlayerList {
+            list.append("\(item.id)")
+        }
+        
+        return list
+    }
+    
+    
     /*
         calc_score
         :params - 6 integers that represent the players stored dice they wish to score
@@ -113,6 +126,7 @@ class Game: ObservableObject {
         self.turnRollCount = 0
         self.turnRollCountFlag = true
         self.tempScore = 0
+        self.currTurn = 0
         
         //clear player array
         self.PlayerList.removeAll()
@@ -123,6 +137,36 @@ class Game: ObservableObject {
         }
         
     }
+    
+    //calc the remaining rolls left in the turn
+    func calc_rolls_remaining() -> Int {
+        return 5 - self.turnRollCount
+        
+    }
 
-
+    // finds the current winner of the game
+    func find_winner() -> Text {
+        var maxScore = 0
+        var maxPlayer = Player(id: "")
+        for player in self.PlayerList {
+            //if two players have the same score and its not zero -- tie game
+            if player.score == maxScore && maxScore != 0 {
+                return Text("Tie Game!")
+            }
+            
+            // update hightest score
+            if player.score > maxScore {
+                maxPlayer = player
+                maxScore = player.score
+            }
+        }
+        // if no one has scored -- tie game
+        if maxScore == 0 {
+            return Text("Tie Game!")
+        } else {
+            // theres a winner
+            return Text("The Winner is \(maxPlayer.id) with \(maxPlayer.score) points!")
+        }
+    }
+    
 }

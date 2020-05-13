@@ -14,7 +14,8 @@ let rules = [
     "One player is chosen to start, and turns continue in a circular fashion",
     "The current player then rolls 6 dice and checks to see if they rolled any scoring dice or combinations",
     "The player must set aside at least one scoring scoring die of their choice, but they arent requred to set aside all their scoring dice",
-    "The same player rolls once again, setting aside one or more die. The player stops rolling once they have set aside 6 total dice.",
+    "The same player rolls once again, setting aside one or more die.",
+    "The player stops rolling once they have set aside 6 total dice.",
     "The combination of dice that is set aside by the current player is then scored (See Scoring)",
     "The first player to 10,000 points is the winner!"
     
@@ -27,6 +28,11 @@ struct RulesListView: View {
                 RuleListItemView(rule:item)
             }
         }
+        .padding()
+        .background(Color(red: 107 / 255, green: 129 / 255, blue: 140 / 255))
+        .cornerRadius(40)
+        .foregroundColor(Color(red: 62 / 255, green: 54 / 255, blue: 63 / 255))
+        .padding(10)
     }
 }
 

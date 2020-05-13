@@ -29,6 +29,11 @@ struct RuleScoringListView: View {
                 RuleScoringItemView(score:item)
             }
         }
+        .padding()
+        .background(Color(red: 107 / 255, green: 129 / 255, blue: 140 / 255))
+        .cornerRadius(40)
+        .foregroundColor(Color(red: 62 / 255, green: 54 / 255, blue: 63 / 255))
+        .padding(10)
     }
 }
 

@@ -11,10 +11,15 @@ import SwiftUI
 struct RuleScoringHeaderView: View {
     var body: some View {
         HStack {
+            Spacer()
             Text("Scoring")
-                .font(.title)
-                .fontWeight(.heavy)
-                .padding(.all, 20)
+                .font(.headline)
+                .fontWeight(.bold)
+                .padding()
+                .background(Color(red: 107 / 255, green: 129 / 255, blue: 140 / 255))
+                .cornerRadius(40)
+                .foregroundColor(Color(red: 255 / 255, green: 252 / 255, blue: 232 / 255))
+                .padding(10)
             Spacer()
         }
     }

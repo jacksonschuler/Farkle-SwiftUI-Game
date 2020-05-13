@@ -32,8 +32,11 @@ struct InGameDiceView: View {
                 }
             }
             HStack {
+                Spacer()
                 RollDiceButton()
+                Spacer()
                 EndTurnButton()
+                Spacer()
             }
             //temp display of variables
             

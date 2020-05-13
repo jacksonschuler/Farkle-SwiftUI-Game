@@ -31,13 +31,19 @@ struct RollDiceButton: View {
                 //update number of rolls this turn
                 self.currGame.turnRollCount += 1
                 
-                if(self.currGame.turnRollCount >= 4){
+                if(self.currGame.turnRollCount > 4){
                     self.currGame.turnRollCountFlag = false
                     // set all die to inactive
                     for die in self.currGame.DiceList {
                         die.isActive = false
                     }
                 }
+                
+                //activate end turn button
+                if(self.currGame.turnRollCount > 0) {
+                    self.currGame.disableTurnButton = false
+                }
+                           
                 
                 //calc potential score
                 self.currGame.tempScore = self.currGame.calc_score()
@@ -50,10 +56,14 @@ struct RollDiceButton: View {
                     .fontWeight(.bold)
                     .font(.title)
                     .padding()
-                    .background(Color.red)
-                    .foregroundColor(.white)
+                    .background(Color(red: 221 / 255, green: 64 / 255, blue: 58 / 255))
+                    .cornerRadius(40)
+                    .foregroundColor(Color(red: 255 / 255, green: 252 / 255, blue: 232 / 255))
                     .padding(10)
-                    .border(Color.red, width: 5)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 40)
+                            .stroke(Color(red: 221 / 255, green: 64 / 255, blue: 58 / 255), lineWidth: 5)
+                       )
             }
             .buttonStyle(PlainButtonStyle())
             .disabled(!self.currGame.turnRollCountFlag)
