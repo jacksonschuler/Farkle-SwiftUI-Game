@@ -36,7 +36,7 @@ struct InGameView: View {
                             self.presentationMode.wrappedValue.dismiss()
                             self.currGame.reset_game()
                             }))
-                }
+                    }
         }
     }
     
